@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+ul {
+  overflow-y: auto; }
+
+li {
+  line-height: 2rem;
+  list-style: none; }
+
+li:first-child {
+  padding: 1rem;
+  color: #fff;
+  background: linear-gradient(#fd267d, #FF7854);
+  box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5);
+  margin-bottom: 1em; }
+
+::-webkit-scrollbar-track {
+  position: absolute;
+  z-index: -1;
+  opacity: 1; }
+
+::-webkit-scrollbar {
+  width: 0.62rem; }
+
+::-webkit-scrollbar-thumb {
+  background: #fd267d;
+  box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5); }
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  * body {
+    background: rgba(0, 0, 0, 0.03);
+    font-family: Roboto, Arial, Helvetica, sans-serif; }
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row; }
+
+.icon {
+  transform: translate(0px, 2px); }
+
+.user {
+  z-index: 1;
+  margin: 3rem auto; }
+  .user .user__card {
+    width: 100%;
+    background: #fff;
+    border-radius: .8em;
+    box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5); }
+    .user .user__card .user__image {
+      position: static;
+      width: 100%;
+      height: 21rem;
+      object-fit: cover;
+      border-radius: .8em .8em 0 0; }
+    .user .user__card .user__card__info {
+      margin: 1em 1em 1em 1em; }
+    .user .user__card .user__name {
+      text-transform: capitalize;
+      margin-bottom: 1em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03); }
+    .user .user__card .user__location {
+      text-transform: capitalize; }
+
+.evaluation {
+  margin: 1rem auto; }
+  .evaluation .evaluation__button {
+    float: left;
+    margin: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5);
+    transition: 0.2s ease-in-out; }
+    .evaluation .evaluation__button:hover {
+      transform: scale(1.08); }
+    .evaluation .evaluation__button:active {
+      transition: 0.1s;
+      transform: scale(1.2);
+      opacity: 0.5; }
+  .evaluation .evaluation__button--like {
+    background: linear-gradient(180deg, #01df8a, #7cf4f5); }
+  .evaluation .evaluation__button--dislike {
+    background: linear-gradient(#fd267d, #FF7854); }
+  .evaluation .icon__evaluation__button--like {
+    color: #fff; }
+  .evaluation .icon__evaluation__button--dislike {
+    color: #fff; }
+  .evaluation .icon__evaluation__button--map {
+    color: rgba(0, 0, 0, 0.2); }
+  .evaluation .icon__evaluation__button--return {
+    color: rgba(0, 0, 0, 0.2); }
+
+#map__user-map {
+  width: 100%;
+  height: 21rem; }
+
+.map__user-map {
+  display: none; }
+
+.evaluation-display__button {
+  margin: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5);
+  transition: 0.2s ease-in-out; }
+  .evaluation-display__button:hover {
+    transform: scale(1.08); }
+  .evaluation-display__button:active {
+    transition: 0.1s;
+    transform: scale(1.2);
+    opacity: 0.5; }
+
+.evaluation-display__button__like {
+  float: right;
+  color: #01df8a; }
+
+.evaluation-display__button__dislike {
+  color: #fd267d; }
+
+.evaluation-display {
+  position: absolute;
+  width: 100%; }
+  .evaluation-display .evaluation-display__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    height: 21rem; }
+  .evaluation-display .evaluation-display__list--dislikes {
+    transform: translateX(-15em);
+    width: 20vw;
+    background: #fff;
+    box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5);
+    text-align: center;
+    border-radius: 0 1em 1em 0; }
+    .evaluation-display .evaluation-display__list--dislikes.is-open {
+      transition: .5s;
+      transform: none; }
+  .evaluation-display .evaluation-display__list--likes {
+    transform: translateX(15em);
+    width: 20vw;
+    background: #fff;
+    box-shadow: 0 4px 9px 0 rgba(213, 218, 224, 0.5);
+    text-align: center;
+    border-radius: 1em 0 0 1em; }
+    .evaluation-display .evaluation-display__list--likes.is-open {
+      transition: .5s;
+      transform: none; }
+
+/*# sourceMappingURL=main.css.map */

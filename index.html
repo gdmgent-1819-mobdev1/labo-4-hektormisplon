@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="js/hammer.min.js"></script>
+
+    <title>Tinder | Match. Chat. Date.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="evaluation-display">
+            <button class="evaluation-display__button evaluation-display__button__dislike">
+                <span>
+                    <ion-icon class="" name="heart-dislike" size="large"></ion-icon>
+                </span>
+            </button>
+            <button class="evaluation-display__button evaluation-display__button__like">
+                <span>
+                    <ion-icon class="" name="md-heart" size="large"></ion-icon>
+                </span>
+            </button>
+            <div class="evaluation-display__list">
+                <ul class="evaluation-display__list--dislikes">
+                    <li>Dislikes</li>
+                </ul>
+                <ul class="evaluation-display__list--likes">
+                    <li>Likes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="user">
+            <div class="user__card" >
+                <img class="user__image" src="" id="hammer">
+                <div class="map map__user-map">
+                    <div id="map__user-map">
+                    </div>
+                </div>
+                <div class="user__card__info">
+                    <h3 class="user__name"></h3>
+                    <h4 class="user__age"></h4>
+                    <h4 class="user__gender"></h4>
+                    <h4 class="user__location"></h4>
+                </div>
+            </div>
+            <div class="evaluation">
+                <button class="evaluation__button evaluation__button__return" type="button">
+                    <span>
+                        <ion-icon class="icon icon__evaluation__button--return" name="return-left" size="large"></ion-icon>
+                    </span>
+                </button>
+                <button class="evaluation__button evaluation__button--dislike" type="button">
+                    <span>
+                        <ion-icon class="icon icon__evaluation__button--dislike" name="close" size="large"></ion-icon>
+                    </span>
+                </button>
+                <button class="evaluation__button evaluation__button--like" type="button">
+                    <span>
+                        <ion-icon class="icon icon__evaluation__button--like" name="md-heart" size="large"></ion-icon>
+                    </span>
+                </button>
+                <button class="evaluation__button display__user-map" type="button">
+                    <span>
+                        <ion-icon class="icon icon__evaluation__button--map" name="locate" size="large"></ion-icon>
+                    </span>
+                </button>
+            </div>
+        </div>
+    <script src="js/get_users.js"></script>
+    <script src="js/geo_location.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+</body>
+</html>

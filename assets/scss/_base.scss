@@ -1,0 +1,22 @@
+//  COLORS
+    $color__pink:           #fd267d !default;
+    $color__pink--light:    #FF7854 !default;
+    $color__green:          #01df8a !default;
+    $color__blue--light:     #07d0ff !default;
+
+    $color__gray:     rgba(0,0,0,0.2);
+    $color__gray--light:     rgba(0,0,0,0.03);
+
+//  GRADIENTS
+
+    $gradient__pink:        linear-gradient($color__pink, $color__pink--light);
+    $gradient__green:       linear-gradient(180deg,#01df8a,#7cf4f5);
+    $gradient__blue:        linear-gradient(0deg,#07d0ff,#3ca4ff);
+//  FONTS
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+//  SHADOW
+    $shadow__gray: 0 4px 9px 0 rgba(213,218,224,.5);
+
+//  DIMENSIONS
+    $user-card__height: 21rem;
